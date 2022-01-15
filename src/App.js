@@ -2,7 +2,7 @@ import React from 'react';
 import Player from './components/Player';
 import ItemSlider from './components/ItemSlider';
 import config from './config.json';
-import logo from './totuus-viestin.png';
+import logo from './images/totuus-viestin.png';
 import './App.css';
 
 class App extends React.Component {

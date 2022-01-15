@@ -1,4 +1,5 @@
 import React from 'react';
+import image from '../images/media-uutiset.jpg';
 import './Player.css';
 
 const Player = ({ title, description, url }) => {
@@ -17,7 +18,7 @@ const Player = ({ title, description, url }) => {
     )  
   } else {
     return (
-      <h1>Valitse video</h1>
+      <img className="placeholder-image" src={image} alt="Placeholder" />
     )
   }
 
