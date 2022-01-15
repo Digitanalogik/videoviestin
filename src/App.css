@@ -1,0 +1,44 @@
+.App {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #282c34;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: auto;
+  z-index: 10;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media (orientation: landscape) {
+  .content {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  .content {
+    flex-direction: column;
+  }
+}

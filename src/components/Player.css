@@ -1,0 +1,130 @@
+.player {
+  display: block;
+  position: absolute;
+  width: 90vw;
+  height: 60vh;
+  align-self: center;
+  justify-self: center;
+  margin-top: -30vh;
+}
+
+h1 {
+  position: absolute;
+  top: 40%;
+  font-size: 48px;
+}
+
+.video {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 60%;
+  height: 85%;
+  box-sizing: border-box;
+  border: solid 1px red;
+  z-index: 1;
+}
+
+.video-text {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 60%;
+  padding: 5px 20px;
+  height: 100px;
+}
+
+.video-text h3 {
+  display: block;
+  margin: 0 0.2em 0 0;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-decoration: none;
+  color: #EEE;
+}
+
+.video-text span {
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #AAA;
+  margin-top: 0.2em;
+}
+
+.item:hover {
+  background: #222;
+}
+
+.item:hover .image img {
+  transform: scale(1.5);
+}
+
+@media screen and (min-width: 1000px) {
+  .video {
+    width: 848px;
+    height: 480px;
+  }
+  .video-text {
+    width: 848px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .video {
+    margin-top: 50px;
+    margin-left: 0;
+    width: 90%;
+    height: auto;
+  }
+  .video-text {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .video {
+    margin-top: 50px;
+    margin-left: 0;
+    width: 80%;
+    height: auto;
+  }
+  .video-text {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 799px) {
+  .video {
+    margin-top: 50px;
+    margin-left: 0;
+    width: 90%;
+    height: auto;
+  }
+  .video-text {
+    width: 100%;
+  }}
+
+
+@media screen and (max-width: 400px) {
+  .video {
+    margin-top: 70px;
+  }
+  .video-text h3 {
+    font-size: 1.1em;
+  }
+  .video-text span {
+    font-size: 1.0em;
+    padding-right: 1em;
+  }  
+}
+
+@media (orientation: portrait) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+  .video-text {
+    width: 100%;
+  }
+}
